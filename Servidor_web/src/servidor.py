@@ -5,7 +5,7 @@ import sys
 portaServer = 6789
 
 # Criando o socket TCP
-serverSocket = socket(AF_INET, SOCK_STREAM)0
+serverSocket = socket(AF_INET, SOCK_STREAM)
 
 
 serverSocket.bind(('', portaServer)) # Associa o socket com a porta definida em todas as interfaces de rede --> ('')
@@ -47,3 +47,4 @@ while True:  # Esperando por uma conexão
 
         # Encerra a conexão com o SOCKET do cliente
         connectionSocket.close()
+
